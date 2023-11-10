@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import AddTodo from "./components/AddTodo";
+import ListTodo from "./components/ListTodo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className="container">
+        <h1 className="text-center mt-5">Todo App</h1>
+
+        <AddTodo />
+        <ListTodo />
+      </div>
+    </Fragment>
   );
 }
 
